@@ -1,16 +1,63 @@
-## Hi there 👋
+# sam.m
 
-<!--
-**LogicLethargic/logiclethargic** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**Sam** · BTech CSE · Hyderabad
 
-Here are some ideas to get you started:
+I take things apart to find out why they work, then write down what I found.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Most of what I've built started as *"why does this even do anything?"* — a bus
+operator's tracking page that does nothing useful unless you read its
+JavaScript; a media receiver burning a full CPU core writing terminal escape
+sequences to a `/dev/tty` nobody was watching; a dictation app that sounded
+wrong until the pauses stopped being a fixed rate.
+
+**[logiclethargic.github.io/sam](https://logiclethargic.github.io/sam)** ← my site
+
+---
+
+### What I work on
+
+**Systems & the Linux desktop**
+GNOME on Fedora, GTK4 + libadwaita, Python, shell tooling. I've gone as deep as
+initramfs and Plymouth themes, and I'm fond of small tools that do one job.
+
+**Reverse engineering**
+Reading other people's JavaScript to find the API underneath. Syscall tracing,
+protocol state machines, payload shapes. Then documenting it so the next person
+doesn't have to work it out twice.
+
+**Building**
+Offline-first tools that solve my own problems. No API keys, no telemetry, no
+network where it isn't needed.
+
+### Selected work
+
+| | |
+|---|---|
+| **[WriteAlong v2](https://github.com/LogicLethargic/writealong)** | Desktop dictation app. Gaps between words are *computed* per word — think latency, letter count against a superlinear length curve, syllable count, articulation cost for digits and caps, punctuation — then clamped and scaled by pace. Offline TTS via Piper. |
+| **[Panasonic Viera Remote](https://github.com/LogicLethargic/Panasonic-web-remote)** | GTK4 + libadwaita remote control for a TV on the local network. Fedora/GNOME, no dependencies beyond PyGObject. |
+| **[Bus Tracker API Notes](https://github.com/LogicLethargic/bus-tracker-api-notes)** | Write-up of an undocumented bus-tracking API reverse-engineered from a tracking page's inline JS — endpoint shape, payload, state machine, and the route-progress geometry to turn GPS fixes into "how far along is the bus". |
+| **[PlayBridge Headless](https://github.com/LogicLethargic/playbridge-headless)** | A receiver burning ~1 CPU core while idle, traced to a full-screen dashboard looping terminal escape codes. Fixed with a two-change downstream patch exposing an execution path that already existed, rather than hiding it behind `nohup` or a pty. |
+
+### Reach for
+
+`Python` · `Shell` · `GTK4` · `libadwaita` · `JavaScript` · `Fedora` · `strace` ·
+`GDB` · `GJS` · `Rust` (small patches) · `HTML/CSS`
+
+### Currently
+
+Building small things for GNOME, writing up what I take apart, and learning more
+systems work than I can currently claim.
+
+### Contact
+
+GitHub is the reliable way to reach me — [open an issue][issues], [start a
+discussion][discussions], or just follow along. I'm open to internships and
+open-source collaboration.
+
+[issues]: https://github.com/LogicLethargic/writealong/issues
+[discussions]: https://github.com/LogicLethargic/sam/discussions
+
+---
+
+<sub>This profile is a work in progress and will keep changing as more of the
+work lands.</sub>
