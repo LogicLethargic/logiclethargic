@@ -10,7 +10,6 @@ JavaScript; a media receiver burning a full CPU core writing terminal escape
 sequences to a `/dev/tty` nobody was watching; a dictation app that sounded
 wrong until the pauses stopped being a fixed rate.
 
-**[portfolio](github.com/LogicLethargic/allsamcaresabout)** ← my site
 
 ---
 
